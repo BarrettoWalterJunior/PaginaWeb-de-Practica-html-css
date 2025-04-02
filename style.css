@@ -14,35 +14,21 @@ html{
 body{
     margin: 0;
     padding: 0; 
-    background: url('assets/fondo-main.jpg') no-repeat center center fixed;
+    background: url('assets/fondo-main.jpg');
     background-size: cover;
     min-height: 100vh;
-    
 }
 /******************nav***************/
 header {
-    height: 100vh; 
-    background-image: url('assets/img-fondo.jpg');
+    position: relative;
+    min-height: 100vh; 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url('assets/img-fondo.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 1;
-}
-header * {
-    position: relative;
-    z-index: 2;
-    color: white; 
-}
 nav{
     display: flex;
     justify-content: space-between;
