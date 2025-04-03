@@ -14,9 +14,9 @@ html{
 body{
     margin: 0;
     padding: 0; 
-    background: url('assets/fondo-main.jpg');
+    background: url('assets/fondo-main.jpg') no-repeat center center fixed;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100%;
 }
 /******************nav***************/
 header {
